@@ -441,9 +441,9 @@ html {
   box-sizing: inherit; }
 
 body {
-  margin: 10px;
+  margin: 0;
   padding: 0;
-  background: #dbe7f9;
+  background: #fefefe;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
@@ -2203,10 +2203,7 @@ p {
   margin-bottom: 1rem;
   font-size: inherit;
   line-height: 1.6;
-  text-rendering: optimizeLegibility;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  text-rendering: optimizeLegibility; }
 
 em,
 i {
@@ -2491,6 +2488,7 @@ ul.no-bullet, ol.no-bullet {
     page-break-inside: auto; } }
 
 .button {
+  display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
   font-family: inherit;
@@ -2504,7 +2502,7 @@ ul.no-bullet, ol.no-bullet {
   text-align: center;
   cursor: pointer;
   background-color: #1779ba;
-  color:#FFF; }
+  color: #fefefe; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
@@ -5131,12 +5129,11 @@ a.thumbnail {
   -ms-flex-align: center;
       align-items: center;
   padding: 0.5rem;
-  border:solid thin black;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #afceff; }
+    background-color: #e6e6e6; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }

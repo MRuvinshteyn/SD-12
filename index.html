@@ -1,30 +1,397 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>, ; ; Fancy Title ; ; ,</title>
-<link rel="stylesheet" href="css/foundation.css">
-<link rel="icon" href="icon.jpg">
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.js"></script>
-</head>
-
-<body>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T I T L E</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="icon" href="icon.jpg">
+  </head>
+  <body>
+      
+    <!-- TOP BAR -->
     <div class="top-bar">
-        <button class="button large"><b>Link 1</b></button>
-        <button class="button large"><b>Link 2</b></button>
-        <button class="button large"><b>Link 3</b></button>
-        <button class="button large"><b>Link 4</b></button>
-        <button class="button large"><b>Link 5</b></button>
-        <i><p style="font-size:.75em; background-color: #9ec3ff;">This nav bar was modified in lines<br>
-            5124-5192 in foundation.css</p></i>
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Site Title</li>  
+          <li>
+            <a href="#">One</a>
+            <ul class="menu vertical">
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
     </div>
-    <br><br>
-    <p>This is an example of a paragraph (modified in lines 2202-2211 in foundation.css)</p>
-    <br><br>
-    <button class="button">This is an example of a button [class button] (modified in lines 2493-2747)</button>
-    <br><br>
+      
+    <!-- TYPOGRAPHY -->
+    <div class="row">
+        
+      <!-- HEADING -->
+      <h1>Heading <small>Smol</small></h1>
+      <h2>Heading <small>Smol</small></h2>
+      <h3>Heading <small>Smol</small></h3>
+        
+      <hr>  
+       
+      <!-- PARAGRAPH -->
+      <p class="lead">Leading paragraph</p>
+      <p>Paragraph, <a href="#">Link</a></p>
+        
+      <hr>  
+      
+      <!-- ALIGNMENT CLASSES -->
+      <p class="text-left">Left</p>
+      <p class="text-center">Center</p>
+      <p class="text-right">Right</p>
+      <p class="text-justify">Justify</p>
+      
+      <div class="callout clearfix">
+        <a class="button float-left">Left</a>
+        <a class="button float-right">Right</a>
+      </div>
+        
+      <code>&lt;p&gt;This is HTML displayed in HTML&lt;/p&gt;</code>
+      <p>Press <kbd>Ctrl + R</kbd> to refresh the page</p>
+        
+      <hr>
+        
+      <blockquote>
+        This is a blockquote from foundation
+        <cite>Michael Ruvinshteyn</cite>
+      </blockquote>
+        
+      <hr>
+        
+      <!-- LISTS -->
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three
+          <ul>
+            <li>Nested Item 1</li>
+            <li>Nested Item 2</li>
+            <li>Nested Item 3</li>
+          </ul>
+        </li>
+      </ul>
+        
+      <ol>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three
+          <ol>
+            <li>Nested Item 1</li>
+            <li>Nested Item 2</li>
+            <li>Nested Item 3</li>
+          </ol>
+        </li>
+      </ol>
+        
+      <hr>
+        
+      <!-- VISIBILITY -->
+      <p class="hide">Hidden</p>
+      <p class="invisible">Invisibility</p>
+      <p>You are on a small screen or larger.</p>
+      <p class="show-for-medium">You are on a medium screen or larger.</p>
+      <p class="show-for-large">You are on a large screen or larger.</p>
+      <p class="hide-for-small-only">You are not on a small screen.</p>
+      <p class="hide-for-medium-only">You are not on a medium screen.</p>
+      <p class="hide-for-large-only">You are not on a large screen.</p>
+      <p class="show-for-landscape">You are in landscape.</p>
+      <p class="show-for-portrait">You are in portrait.</p>
+        
+    </div>
+      
+    <hr>
+      
+    <!-- BUTTONS -->
+    <div class="row">
     
-</body>
+      <!-- TYPES -->
+      <button class="button">Button</button>
+      <a href="#" class="button">Link</a>
+      <input type="button" value="Input" class="button">
+        
+      <br>
+        
+      <!-- COLORED BUTTONS -->
+      <button class="success button">Success Button</button>
+      <button class="alert button">Alert Button</button>
+      <button class="warning button">Warning Button</button>
+      <button class="secondary button">Secondary Button</button>
+      <button class="button disabled">Disabled Button</button>
+        
+      <br>
+        
+      <!-- SIZES -->
+      <button class="button tiny">Tiny Button</button>
+      <button class="button small">Small Button</button>
+      <button class="button">Medium (Regular) Button</button>
+      <button class="button large">Large Button</button>
+      <button class="button expanded">Expanded Button</button>
+      <button class="button expanded large">Expanded Large Button (you can change sizes of expanded buttons)</button>
+        
+      <br>
+        
+      <!-- HOLLOW -->
+      <button class="success button hollow">Success Button</button>
+      <button class="alert button hollow">Alert Button</button>
+      <button class="warning button hollow">Warning Button</button>
+      <button class="secondary button hollow">Secondary Button</button>
+        
+    </div>
+      
+    <!-- FORMS -->
+    <div class="row">
+        
+      <!-- INPUTS -->
+      <form>
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="Name">
+        </div>
+          
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="Email">
+        </div>
+          
+        <div>
+          <label>Number</label>
+          <input type="number">
+        </div>
+          
+        <div>
+          <label>Message</label>
+          <textarea placeholder="Message"></textarea>
+        </div>
+          
+        <div>
+          <label>Gender</label>
+          <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+          
+        <div>
+          <label>Gender (if you have more than one)</label>
+          <select multiple>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+          
+        <fieldset class="fieldset">
+          <legend>A Fieldset</legend>
+          <input type="checkbox"><label>Checkbox 1</label>
+          <input type="checkbox"><label>Checkbox 2</label>
+          <input type="checkbox"><label>Checkbox 3</label>
+        </fieldset>
+          
+        <label for="fileUpload" class="button">Upload File</label>
+        <input type="file" id="fileUpload" class="show-for-sr">
+          
+        <label>Password</label>
+        <input type="password">
+        <p class="help-text">Your password must be 8 characters or longer</p>
+          
+        <div class="input-group">
+          <input class="input-group-field" type="email">
+          <div class="input-group-button">
+            <input type="submit" class="button" value="Submit">
+          </div>  
+        </div>
+          
+        <div class="switch">
+          <input class="switch-input" id="mySwitch" type="checkbox"
+name="exampleSwitch">
+          <label class="switch-paddle" for="mySwitch">
+            <span class="show-for-sr">Enabled</span>
+          </label>
+        </div>
+          
+        <div class="slider" data-slider data-initial-start='0' data-end='20'>
+          <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+          <span class="slider-fill" data-slider-fill></span>
+          <input type="hidden">
+        </div>
+      </form>
+        
+    </div>
+      
+    <hr>
+      
+    <!-- TABLES -->
+    <div class="row">
+      
+      <table class="striped hover stack table-scroll">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Brian</td>
+          <td>Leung</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Michael</td>
+          <td>Ruvinshteyn</td>
+          <td>17</td>
+        </tr>
+      </table>
+      
+    </div>
+      
+    <hr>
+      
+    <!-- MENUS -->
+    <div class="row">
+      
+      <ul class="menu">
+        <li class="menu-text">Site Title</li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li class="active"><a href="#">Link 3 (active)</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+        
+      <br>
+        
+      <ul class="menu vertical">
+        <li class="menu-text">Site Title but now in verticality</li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li class="active"><a href="#">Link 3 (active)</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+        
+      <br>
+        
+      <ul class="menu icon-top">
+        <li><a href="#"><i class="fi-paperclip"></i> <span>One</span></a></li>
+        <li><a href="#"><i class="fi-paperclip"></i> <span>Two</span></a></li>
+        <li><a href="#"><i class="fi-paperclip"></i> <span>Three</span></a></li>
+        <li><a href="#"><i class="fi-paperclip"></i> <span>Four</span></a></li>
+      </ul>
+      
+    </div>
+      
+    <hr>
+    
+    <!-- CALLOUTS -->
+    <div class="row">
+      
+      <div class="callout">
+        <p>This is a callout</p>
+      </div>
+      <div class="callout secondary">
+        <p>This is a secondary callout</p>
+      </div>
+      <div class="callout success">
+        <p>This is a success callout</p>
+      </div>
+      <div class="callout warning">
+        <p>This is a warning callout</p>
+      </div>
+      <div class="callout alert">
+        <p>This is an alert callout</p>
+      </div>
+      
+    </div>
+      
+    <hr>
+      
+    <!-- PROGRESS BARS -->
+    <div class="success progress" role="progressbar">
+      <div class="progress-meter" style="width:25%">
+        <p class="progress-meter-text">Success Progress</p>
+      </div>
+    </div>
+    
+    <div class="warning progress" role="progressbar">
+      <div class="progress-meter" style="width:50%">
+        <p class="progress-meter-text">Warning Progress</p>
+      </div>
+    </div>
+      
+    <div class="alert progress" role="progressbar">
+      <div class="progress-meter" style="width:75%">
+        <p class="progress-meter-text">Alert Progress</p>
+      </div>
+    </div>
+      
+    <hr>
+      
+    <!-- LABELS -->
+    <span class="success label">Success Label</span>
+    <span class="secondary label">Secondary Label</span>
+    <span class="warning label">Warning Label</span>
+    <span class="alert label">Alert Label</span>
+      
+    <hr>
+      
+    <!-- BADGES -->
+    <span class="success badge">Success Badge</span>
+    <span class="secondary badge">Secondary Badge</span>
+    <span class="warning badge">Warning Badge</span>
+    <span class="alert badge">Alert Badge</span>
+      
+    <br><hr>
+      
+    <!-- BREADCRUMBS -->
+    <nav role="navigation">
+      <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li class="disabled">Disabled</li>
+        <li><a href="#">Posts</a></li>
+        <l1>Current Tab</l1>
+      </ul>
+    </nav>
+      
+    <hr>
+      
+    <!-- PAGINATION -->
+    <ul class="pagination" role="navigation">
+      <li class="disabled">Previous</li>
+      <li class="current">1</li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li class="ellipsis"></li>
+      <li><a href="#">14</a></li>
+      <li><a href="#">15</a></li>
+      <li><a href="#">Next</a></li>
+    </ul>
+      
+    <hr>
+      
+    
+    
+    <div style="height:200px;"></div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
